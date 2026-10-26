@@ -1,0 +1,456 @@
+/* --------------------------------------------------
+   GLOBAL THEME — GAMING + DATA HYBRID (NEON BLUE)
+-------------------------------------------------- */
+
+:root {
+    --bg-dark: #0a0f1a;
+    --bg-light: #f5f7fa;
+    --text-dark: #e6e9ef;
+    --text-light: #0a0f1a;
+    --neon: #00aaff;
+    --card-dark: #111827;
+    --card-light: #ffffff;
+    --border-glow: 0 0 12px rgba(0, 170, 255, 0.6);
+    --transition: 0.25s ease;
+}
+
+body.dark {
+    background: var(--bg-dark);
+    color: var(--text-dark);
+}
+
+body.light {
+    background: var(--bg-light);
+    color: var(--text-light);
+}
+
+/* --------------------------------------------------
+   NAVBAR
+-------------------------------------------------- */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: var(--card-dark);
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--neon);
+    box-shadow: var(--border-glow);
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: var(--neon);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: var(--text-dark);
+    text-decoration: none;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.nav-links a:hover,
+.nav-links .active {
+    color: var(--neon);
+}
+
+#theme-toggle {
+    background: none;
+    border: none;
+    color: var(--neon);
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+/* --------------------------------------------------
+   HERO SECTIONS
+-------------------------------------------------- */
+
+.hero,
+.resume-hero,
+.projects-hero,
+.sports-hero,
+.contact-hero {
+    padding: 140px 20px 80px;
+    text-align: center;
+}
+
+.hero h1,
+.resume-hero h1,
+.projects-hero h1,
+.sports-hero h1,
+.contact-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: var(--neon);
+}
+
+.tagline {
+    font-size: 1.2rem;
+    opacity: 0.8;
+}
+
+/* --------------------------------------------------
+   TYPEWRITER EFFECT
+-------------------------------------------------- */
+
+.typewriter {
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--neon);
+    border-right: 3px solid var(--neon);
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+    animation: typing 3s steps(20) forwards, blink 0.7s infinite;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink {
+    50% { border-color: transparent; }
+}
+
+/* --------------------------------------------------
+   BUTTONS
+-------------------------------------------------- */
+
+.cta {
+    display: inline-block;
+    margin: 20px 10px;
+    padding: 12px 28px;
+    background: var(--neon);
+    color: #000;
+    border-radius: 6px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.cta:hover {
+    box-shadow: var(--border-glow);
+}
+
+.cta.ghost {
+    background: transparent;
+    border: 2px solid var(--neon);
+    color: var(--neon);
+}
+
+.cta.ghost:hover {
+    background: var(--neon);
+    color: #000;
+}
+
+/* --------------------------------------------------
+   SECTIONS
+-------------------------------------------------- */
+
+section {
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+/* --------------------------------------------------
+   FEATURED CARDS
+-------------------------------------------------- */
+
+.featured-grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.featured-card {
+    background: var(--card-dark);
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid var(--neon);
+    transition: var(--transition);
+}
+
+.featured-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--border-glow);
+}
+
+.mini-link {
+    color: var(--neon);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* --------------------------------------------------
+   PROJECT GRID
+-------------------------------------------------- */
+
+.filter-section {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.filter-btn {
+    background: transparent;
+    border: 2px solid var(--neon);
+    color: var(--neon);
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: var(--transition);
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background: var(--neon);
+    color: #000;
+}
+
+.projects-grid {
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.project-card {
+    background: var(--card-dark);
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid var(--neon);
+    transition: var(--transition);
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--border-glow);
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.tag {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 6px 12px;
+    background: var(--neon);
+    color: #000;
+    border-radius: 6px;
+    font-size: 0.85rem;
+}
+
+/* --------------------------------------------------
+   SPORTS STATS
+-------------------------------------------------- */
+
+.stats-grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.stat-card {
+    background: var(--card-dark);
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid var(--neon);
+    transition: var(--transition);
+}
+
+.stat-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--border-glow);
+}
+
+.loading {
+    text-align: center;
+}
+
+/* --------------------------------------------------
+   CONTACT PAGE — UPGRADED
+-------------------------------------------------- */
+
+.contact-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contact-header h1 {
+    font-size: 2.5rem;
+    color: var(--neon);
+}
+
+.contact-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 40px;
+    align-items: start;
+}
+
+.contact-form-section,
+.contact-info-section {
+    background: var(--card-dark);
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid var(--neon);
+    box-shadow: var(--border-glow);
+}
+
+.contact-form-section h2,
+.contact-info-section h2 {
+    color: var(--neon);
+    margin-bottom: 20px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    margin-bottom: 6px;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid var(--neon);
+    background: #0d1322;
+    color: var(--text-dark);
+}
+
+.contact-btn {
+    padding: 12px;
+    background: var(--neon);
+    border: none;
+    border-radius: 6px;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    transition: var(--transition);
+    width: 100%;
+}
+
+.contact-btn:hover {
+    box-shadow: var(--border-glow);
+}
+
+.contact-card {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: #0d1322;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid var(--neon);
+    margin-bottom: 20px;
+    transition: var(--transition);
+}
+
+.contact-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--border-glow);
+}
+
+.contact-icon {
+    font-size: 2rem;
+    color: var(--neon);
+}
+
+.contact-card h3 {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.contact-card a {
+    color: var(--neon);
+    text-decoration: none;
+}
+
+
+/* --------------------------------------------------
+   SUCCESS MESSAGE ANIMATION
+-------------------------------------------------- */
+
+#success-message {
+    background: var(--neon);
+    color: #000;
+    padding: 15px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    box-shadow: 0 0 20px var(--neon);
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.success-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.success-hidden {
+    display: none;
+}
+
+
+/* --------------------------------------------------
+   CONFETTI ANIMATION
+-------------------------------------------------- */
+
+#confetti-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 9999;
+}
+
+.confetti-piece {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: var(--neon);
+    opacity: 0.9;
+    animation: confetti-fall 2.5s linear forwards;
+}
+
+@keyframes confetti-fall {
+    0% {
+        transform: translateY(-50px) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+

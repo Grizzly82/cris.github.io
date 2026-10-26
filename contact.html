@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact — Cris Vizcaino</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+</head>
+
+<body class="dark">
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="logo">CRIS VIZCAINO</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="sports.html">Sports Stats</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+            <li><button id="theme-toggle">🌙</button></li>
+        </ul>
+    </nav>
+
+    <header class="contact-hero">
+        <h1>Contact Me</h1>
+        <p>Let’s connect — data, sports analytics, gaming, or collaboration.</p>
+    </header>
+
+ <main class="contact-container">
+
+    <section class="contact-header">
+        <h1>Let’s Connect</h1>
+        <p>I’d love to talk data, sports analytics, gaming, or collaborate on a project.</p>
+    </section>
+
+    <div class="contact-wrapper">
+
+        <!-- LEFT SIDE: FORM -->
+        <section class="contact-form-section">
+            <h2>Send a Message</h2>
+
+            <div id="success-message" class="success-hidden">
+                <p>Message Sent Successfully! 🚀</p>
+            </div>
+
+            <div id="confetti-container"></div>
+
+
+            <form class="contact-form" action="https://formspree.io/f/mnpppnlg" method="POST">
+
+                <div class="input-group">
+                    <label>Your Name</label>
+                    <input type="text" name="name" required />
+                </div>
+
+                <div class="input-group">
+                    <label>Your Email</label>
+                    <input type="email" name="email" required />
+                </div>
+
+                <div class="input-group">
+                    <label>Your Message</label>
+                    <textarea name="message" required></textarea>
+                </div>
+
+                <button type="submit" class="contact-btn">Send Message</button>
+            </form>
+        </section>
+
+        <!-- RIGHT SIDE: INFO -->
+        <section class="contact-info-section">
+            <h2>Other Ways to Reach Me</h2>
+
+            <div class="contact-card">
+                <span class="contact-icon">📧</span>
+                <div>
+                    <h3>Email</h3>
+                    <a href="mailto:Cris.Vizcaino@live.com">Cris.Vizcaino@live.com</a>
+                </div>
+            </div>
+
+            <div class="contact-card">
+                <span class="contact-icon">💼</span>
+                <div>
+                    <h3>LinkedIn</h3>
+                    <a href="https://www.linkedin.com/in/cristobalvizcaino/" target="_blank">
+                        linkedin.com/in/cristobalvizcaino
+                    </a>
+                </div>
+            </div>
+
+            <div class="contact-card">
+                <span class="contact-icon">💻</span>
+                <div>
+                    <h3>GitHub</h3>
+                    <a href="https://github.com/Grizzly82" target="_blank">
+                        github.com/Grizzly82
+                    </a>
+                </div>
+            </div>
+
+        </section>
+
+    </div>
+
+</main>
+
+
+    <footer>
+        <p>© 2026 Cris Vizcaino — Neon Gaming Contact</p>
+    </footer>
+
+</body>
+</html>

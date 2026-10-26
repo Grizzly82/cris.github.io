@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sports Stats — Cris Vizcaino</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+</head>
+
+<body class="dark">
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="logo">CRIS VIZCAINO</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="sports.html" class="active">Sports Stats</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><button id="theme-toggle">🌙</button></li>
+        </ul>
+    </nav>
+
+    <header class="sports-hero">
+        <h1>Live Sports Stats</h1>
+        <p>Yankees + Giants — Real‑time data feeds</p>
+    </header>
+
+    <main class="sports-container">
+
+        <!-- YANKEES -->
+        <section class="sports-section">
+            <h2>Yankees — Division Standings</h2>
+            <div id="standings" class="stats-grid">
+                <p class="loading">Loading standings...</p>
+            </div>
+        </section>
+
+        <section class="sports-section">
+            <h2>Yankees — Recent Games</h2>
+            <div id="games" class="stats-grid">
+                <p class="loading">Loading recent games...</p>
+            </div>
+        </section>
+
+        <section class="sports-section">
+            <h2>Yankees — Players</h2>
+            <div id="players" class="stats-grid">
+                <p class="loading">Loading players...</p>
+            </div>
+        </section>
+
+        <!-- GIANTS -->
+        <section class="sports-section">
+            <h2>New York Giants — NFC East Standings</h2>
+            <div id="giants-standings" class="stats-grid">
+                <p class="loading">Loading Giants standings...</p>
+            </div>
+        </section>
+
+        <section class="sports-section">
+            <h2>New York Giants — Players</h2>
+            <div id="giants-players" class="stats-grid">
+                <p class="loading">Loading Giants players...</p>
+            </div>
+        </section>
+
+        <section class="sports-section">
+            <h2>New York Giants — Season Schedule</h2>
+            <div id="giants-schedule" class="stats-grid">
+                <p class="loading">Loading Giants schedule...</p>
+            </div>
+        </section>
+
+        <section class="sports-section">
+            <h2>New York Giants — Stat Leaders</h2>
+            <div id="giants-leaders" class="stats-grid">
+                <p class="loading">Loading Giants stat leaders...</p>
+            </div>
+        </section>
+
+        <section class="sports-section">
+            <h2>New York Giants — Team Comparison vs Opponents</h2>
+            <div id="giants-comparison" class="stats-grid">
+                <p class="loading">Loading Giants comparisons...</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Cris Vizcaino — Neon Sports Dashboard</p>
+    </footer>
+
+</body>
+</html>

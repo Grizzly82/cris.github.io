@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects — Cris Vizcaino</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+</head>
+
+<body class="dark">
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="logo">CRIS VIZCAINO</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="projects.html" class="active">Projects</a></li>
+            <li><a href="sports.html">Sports Stats</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><button id="theme-toggle">🌙</button></li>
+        </ul>
+    </nav>
+
+    <header class="projects-hero">
+        <h1>Projects</h1>
+        <p>SQL • Machine Learning • AWS • Sports Analytics • Fun Builds</p>
+    </header>
+
+    <!-- FILTER BUTTONS -->
+    <section class="filter-section">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="sql">SQL</button>
+        <button class="filter-btn" data-filter="ml">Machine Learning</button>
+        <button class="filter-btn" data-filter="aws">AWS</button>
+        <button class="filter-btn" data-filter="sports">Sports Analytics</button>
+        <button class="filter-btn" data-filter="fun">Fun</button>
+    </section>
+
+    <!-- PROJECT GRID -->
+    <section class="projects-grid">
+
+        <!-- SPORTS ANALYTICS -->
+        <div class="project-card" data-category="sports">
+            <img src="images/yankees.jpg" alt="Yankees Dashboard">
+            <h3>⚾ Yankees Performance Dashboard</h3>
+            <p>Live MLB data visualizations powered by the MLB Stats API.</p>
+            <a href="sports.html" class="mini-link">View Live Stats</a>
+            <span class="tag sports">Sports Analytics</span>
+        </div>
+
+        <!-- ML -->
+        <div class="project-card" data-category="ml">
+            <img src="images/gaming.jpg" alt="Gaming Analytics">
+            <h3>🎮 Gaming Analytics: Player Behavior Model</h3>
+            <p>Machine learning model predicting player churn and engagement patterns.</p>
+            <a href="#" class="mini-link">GitHub Repo (Coming Soon)</a>
+            <span class="tag ml">Machine Learning</span>
+        </div>
+
+        <!-- SQL -->
+        <div class="project-card" data-category="sql">
+            <img src="images/sql.jpg" alt="SQL Explorer">
+            <h3>📊 SQL Sports Stats Explorer</h3>
+            <p>Interactive SQL-based tool for querying sports datasets.</p>
+            <a href="#" class="mini-link">GitHub Repo (In Progress)</a>
+            <span class="tag sql">SQL</span>
+        </div>
+
+        <!-- AWS -->
+        <div class="project-card" data-category="aws">
+            <img src="images/aws.jpg" alt="AWS Pipeline">
+            <h3>🤖 AWS Machine Learning Pipeline</h3>
+            <p>End-to-end ML workflow using AWS S3, Lambda, and SageMaker.</p>
+            <a href="#" class="mini-link">GitHub Repo (Planned)</a>
+            <span class="tag aws">AWS</span>
+        </div>
+
+        <!-- FUN -->
+        <div class="project-card" data-category="fun">
+            <img src="images/baking.jpg" alt="Baking Analytics">
+            <h3>🍪 Baking Analytics: Recipe Optimization</h3>
+            <p>Fun project analyzing baking variables to optimize texture and flavor.</p>
+            <a href="#" class="mini-link">GitHub Repo (Planned)</a>
+            <span class="tag fun">Fun</span>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>© 2026 Cris Vizcaino — Neon Gaming Projects</p>
+    </footer>
+
+</body>
+</html>
